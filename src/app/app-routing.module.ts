@@ -7,7 +7,8 @@ const routes: Routes = [
   {
     path: 'company',
     // component: CompanyComponent,
-    loadChildren: './company/company.module#CompanyModule'
+    loadChildren: './company/company.module#CompanyModule',
+    data: { preload: true }
   },
   {
     path: 'person',
